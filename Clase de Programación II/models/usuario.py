@@ -1,12 +1,10 @@
 class Usuario:
-    def __init__(self, id, nombre, email):
-        self.id = id
+    def __init__(self, id_usuario, nombre, usuario, contraseña, rol):
+        self.id_usuario = id_usuario
         self.nombre = nombre
-        self.email = email
+        self.usuario = usuario
+        self.contraseña = contraseña
+        self.rol = rol
 
-    def to_dict(self):
-        return {
-            "id": self.id,
-            "nombre": self.nombre,
-            "email": self.email
-        }
+    def mostrar(self):
+        return f"{self.nombre} ({self.rol})"
