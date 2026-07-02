@@ -1,12 +1,9 @@
 class Pago:
-    def __init__(self, id, metodo, monto):
-        self.id = id
+    def __init__(self, id_pago, metodo, fecha, monto):
+        self.id_pago = id_pago
         self.metodo = metodo
+        self.fecha = fecha
         self.monto = monto
 
-    def to_dict(self):
-        return {
-            "id": self.id,
-            "metodo": self.metodo,
-            "monto": self.monto
-        }
+    def mostrar(self):
+        return f"Pago: {self.metodo} - ${self.monto:.2f}"
