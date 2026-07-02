@@ -34,7 +34,3 @@ El objetivo principal del proyecto es el diseño e implementación de un módulo
 
 ---
 
-## Especificaciones Técnicas
-* **Entorno de Desarrollo:** [Insertar el entorno de desarrollo utilizado, ej: Visual Studio Code]
-* **Lenguaje de Programación:** [Insertar el lenguaje de programación, ej: C++]
-* **Control de Versiones:** Git y GitHub
