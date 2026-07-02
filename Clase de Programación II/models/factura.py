@@ -5,7 +5,7 @@ class Factura:
         self.producto = producto
         self.precio = precio
 
-    def mostrar_factura(self):
+    def to_dict(self):
         return {
             "id": self.id,
             "cliente": self.cliente,
