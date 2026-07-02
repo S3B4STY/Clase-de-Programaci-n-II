@@ -9,37 +9,46 @@ def menu_principal():
 
     while True:
 
-        print("\n======================================")
+        print("\n")
+        print("=" * 50)
         print("      SISTEMA DE FACTURACIÓN")
-        print("======================================")
+        print("=" * 50)
         print("1. Clientes")
         print("2. Productos")
         print("3. Facturas")
         print("4. Pagos")
         print("5. Reportes")
         print("6. Salir")
-        print("======================================")
+        print("=" * 50)
 
         opcion = input("Seleccione una opción: ")
 
         if opcion == "1":
+
             menu_clientes()
 
         elif opcion == "2":
+
             menu_productos()
 
         elif opcion == "3":
+
             menu_facturas()
 
         elif opcion == "4":
+
             menu_pagos()
 
         elif opcion == "5":
+
             menu_reportes()
 
         elif opcion == "6":
+
             print("\nGracias por utilizar el sistema.")
+
             break
 
         else:
-            print("\nOpción inválida. Intente nuevamente.")
+
+            print("\nOpción incorrecta.")
