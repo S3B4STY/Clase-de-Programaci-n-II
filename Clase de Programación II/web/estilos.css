@@ -1,0 +1,13 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    margin: 40px;
+}
+
+h1{
+    color: #1f4e79;
+}
+
+ul{
+    line-height: 1.8;
+}
