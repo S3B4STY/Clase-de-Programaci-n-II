@@ -1,25 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Facturación</title>
-    <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
 
-    <h1>Sistema de Facturación</h1>
+    <header>
 
-    <p>Proyecto desarrollado en Python.</p>
+        <img src="logo.png" alt="Logo del Sistema" width="120">
 
-    <h2>Módulos</h2>
+        <h1>Sistema de Facturación</h1>
 
-    <ul>
-        <li>Clientes</li>
-        <li>Productos</li>
-        <li>Facturas</li>
-        <li>Pagos</li>
-        <li>Reportes</li>
-    </ul>
+        <p>Proyecto desarrollado en Python</p>
+
+    </header>
+
+    <hr>
+
+    <section id="inicio">
+
+        <h2>Descripción</h2>
+
+        <p>
+            Este sistema permite administrar clientes, productos,
+            facturas, pagos y reportes utilizando Python y archivos
+            de Excel como base de datos.
+        </p>
+
+    </section>
+
+    <section id="modulos">
+
+        <h2>Módulos del Sistema</h2>
+
+        <ul>
+            <li>✔ Gestión de Clientes</li>
+            <li>✔ Gestión de Productos</li>
+            <li>✔ Gestión de Facturas</li>
+            <li>✔ Gestión de Pagos</li>
+            <li>✔ Reportes</li>
+        </ul>
+
+    </section>
+
+    <section>
+
+        <h2>Información del Proyecto</h2>
+
+        <p><strong>Fecha:</strong> <span id="fecha"></span></p>
+
+        <p><strong>Hora:</strong> <span id="hora"></span></p>
+
+    </section>
+
+    <section>
+
+        <h2>Repositorio</h2>
+
+        <button onclick="abrirRepositorio()">
+            Ver Proyecto en GitHub
+        </button>
+
+    </section>
+
+    <br>
+
+    <button onclick="volverArriba()">
+        ↑ Volver arriba
+    </button>
+
+    <hr>
+
+    <footer>
+
+        <p>
+            © 2026 Sistema de Facturación |
+            Clase de Programación II
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
