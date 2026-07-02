@@ -1,22 +1,21 @@
 def crear_factura():
+
     print("\n===== CREAR FACTURA =====")
-    
+
     cedula = input("Cédula del cliente: ")
     fecha = input("Fecha (dd/mm/aaaa): ")
-
-    print("\nIngrese los productos.")
-    print("Escriba 'fin' para terminar.\n")
 
     productos = []
 
     while True:
-        nombre = input("Producto: ")
+
+        nombre = input("\nProducto (fin para terminar): ")
 
         if nombre.lower() == "fin":
             break
 
         cantidad = int(input("Cantidad: "))
-        precio = float(input("Precio unitario: "))
+        precio = float(input("Precio: "))
 
         subtotal = cantidad * precio
 
@@ -29,21 +28,20 @@ def crear_factura():
 
     total = sum(p["subtotal"] for p in productos)
 
-    print("\n========= FACTURA =========")
+    print("\n========== FACTURA ==========")
     print("Cliente:", cedula)
     print("Fecha:", fecha)
 
-    for producto in productos:
+    for p in productos:
         print(
-            f"{producto['nombre']} | "
-            f"{producto['cantidad']} x "
-            f"${producto['precio']:.2f} = "
-            f"${producto['subtotal']:.2f}"
+            f"{p['nombre']}  "
+            f"{p['cantidad']} x ${p['precio']:.2f} = ${p['subtotal']:.2f}"
         )
 
-    print("----------------------------")
+    print("-----------------------------")
     print(f"TOTAL: ${total:.2f}")
-    print("============================")
+    print("=============================")
+
 
 def menu_facturas():
 
@@ -53,7 +51,7 @@ def menu_facturas():
         print("1. Crear factura")
         print("2. Volver")
 
-        opcion = input("Seleccione una opción: ")
+        opcion = input("Seleccione: ")
 
         if opcion == "1":
 
